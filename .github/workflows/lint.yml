@@ -17,6 +17,11 @@ jobs:
       # this step will automatically clone the code of current branch into the runner
       - name: Checkout/Clone the code
         uses: actions/checkout@v7
+      # this step will intsll python
+      - name: Set up python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.14'
       # this step will install the linting tool ( rull is a python linter)
       - name: Install Linter
         run: pip install ruff
