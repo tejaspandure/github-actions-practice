@@ -20,4 +20,7 @@ jobs:
       # this step will install the linting tool ( rull is a python linter)
       - name: Install Linter
         run: pip install ruff
+        # this step willl run the linter
+      - name: check the file for linting
+        run: ruff check .
   
