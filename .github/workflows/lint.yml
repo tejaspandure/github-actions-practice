@@ -10,7 +10,7 @@ on:
     
 
 jobs:
-  code:
+  code-linting:
     runs-on: ubuntu-latest
     # this step will automatically clone the code of the current brach into the runner
     steps:
